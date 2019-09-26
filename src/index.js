@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//HashRouter表示一个路由的根容器，将来所有的与路由相关的东西都要包裹在HashRouter内，且一个网站中只需要一个HashRouter
+//Route表示一个路由规则，在Route上，有两个比较重要的属性：path component
+//Link表示一个路由的链接
+import { HashRouter, Route, Link } from 'react-router-dom';
+import App from './App'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+  ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+  );
+  
