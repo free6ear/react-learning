@@ -19,13 +19,15 @@ export default class App extends React.Component {
         return <HashRouter>
             <div>
                 <Link to="/movie">电影</Link><Divider type="vertical" />
-                <Link to="music">音乐</Link><Divider type="vertical" />
-                <Link to="book">图书</Link>
+                <Link to="/music">音乐</Link><Divider type="vertical" />
+                <Link to="/book">图书</Link>
 
                 <Divider />
 
                 <Route path="/movie" component={Movie} />
+                <Divider />
                 <Route path="/music" component={Music} />
+                <Divider />
                 <Route path="/book" component={Book} />
             </div>
         </HashRouter>
