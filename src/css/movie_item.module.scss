@@ -1,0 +1,19 @@
+.box {
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 150px;
+    margin: 6px;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 6px #ccc;
+    .img {
+        width: 100px;
+        height: 140px;
+    }
+
+    &:hover {
+        opacity: 0.9;
+        transform: rotate(1 deg) scale(1.03);
+    }
+}
